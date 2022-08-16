@@ -5,7 +5,6 @@ function comparar(valorGasolina, valorEtanol){
     indiceComparacao = 0.7;
     perc = Math.round(resultadoComparacao * 100);
 
-
     if (resultadoComparacao <= indiceComparacao) {
         document.getElementById("visor").innerHTML =  ` ${perc}% - É aconselhável você utilizar o Etanol `;
         var imagemCombustivel = document.querySelector("#image");
@@ -15,5 +14,4 @@ function comparar(valorGasolina, valorEtanol){
          var imagemCombustivel = document.querySelector("#image");
          imagemCombustivel.setAttribute('src', './img/gasolina.jpg');
     }
-    
 }
